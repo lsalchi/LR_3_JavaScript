@@ -1,22 +1,29 @@
-function Fizzbuzz(num) {
-    for(let i = 1; i <= num; i++) {
+function FizzBuzz(num) {
+    for(let i = 1; i <= num; i++){
+      //Проверка если число делится на 3 и на 5 одновременно
       if(i % 3 === 0 && i % 5 === 0) {
-        console.log('fizzbuzz')
+        //Выводим в консоль FizzBuzz
+        console.log('FizzBuzz')
       }
-        else if(i % 3 === 0) {
-        console.log('fizz')
+      //Проверка если число делится только на 3
+      else if (i % 3 === 0) {
+        //Выводим в консоль Fizz
+        console.log('Fizz')
       }
-        else if(i % 5 === 0) {
-        console.log('buzz')
+      //Проверка если число делится только на 3
+      else if (i % 5 === 0) {
+        //Выводим в консоль Buzz
+        console.log('Buzz')
       }
-        else {
+      else {
+        //Если ничего не выполняется - выводим просто значение i
         console.log(i)
       }
     }
   }
-  Fizzbuzz(3);
-  console.log("\n")
-  Fizzbuzz(5);
-  console.log("\n")
-  Fizzbuzz(20);
   
+  FizzBuzz(3);
+  console.log("\n")
+  FizzBuzz(5);
+  console.log("\n")
+  FizzBuzz(20);
